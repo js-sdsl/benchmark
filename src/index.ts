@@ -6,12 +6,12 @@ import saveResult from './utils/saveResult';
 
 async function main(input: string[]) {
   let content;
-  if (input.length) {
+  if (input.length === 0) {
     content = await Promise.all([
       env(),
-      input.includes('heap') ? heapTest() : '',
-      input.includes('deque') ? dequeTest() : '',
-      input.includes('rbTree') ? rbTreeTest() : ''
+      heapTest(),
+      dequeTest(),
+      rbTreeTest()
     ]);
   } else {
     content = await Promise.all([

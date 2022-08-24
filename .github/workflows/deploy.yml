@@ -1,4 +1,4 @@
-name: Js-sdsl benchmark CI
+name: Js-sdsl Benchmark CI
 
 on: ["push", "pull_request"]
 
