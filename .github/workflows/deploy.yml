@@ -1,0 +1,19 @@
+name: Js-sdsl benchmark CI
+
+on: ["push", "pull_request"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@master
+    - name: Install dependencies
+      run: yarn install
+    - name: Generate README
+      run: yarn generate && mkdir docs && mv README.md docs/
+    - name: Deploy to github pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: docs
+        branch: gh-pages

@@ -1,0 +1,49 @@
+{
+  "name": "compare2other",
+  "version": "1.0.0",
+  "description": "compare js-sdsl to other data structure package",
+  "main": "index.js",
+  "author": "ZLY201 <951711127@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "setup": "rm -rf node_modules && yarn install",
+    "lint": "eslint --fix --color --cache --max-warnings=0 .",
+    "generate": "rm -rf README.md && touch README.md && ttsc && node dist/index.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "bintrees": "^1.0.2",
+    "denque": "^2.1.0",
+    "double-ended-queue": "^2.1.0-0",
+    "functional-red-black-tree": "^1.0.1",
+    "heap": "^0.2.7",
+    "heap-js": "^2.2.0",
+    "js-sdsl": "^4.1.1",
+    "mnemonist": "^0.39.2",
+    "tinyqueue": "^2.0.3",
+    "typescript-collections": "^1.3.3"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "yarn lint"
+    ]
+  },
+  "devDependencies": {
+    "@types/benchmark": "^2.1.1",
+    "@types/bintrees": "^1.0.3",
+    "@types/double-ended-queue": "^2.1.1",
+    "@types/functional-red-black-tree": "^1.0.1",
+    "@types/heap": "^0.2.31",
+    "@types/node": "^18.7.1",
+    "@typescript-eslint/eslint-plugin": "5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "commitlint": "^17.0.3",
+    "eslint": "^8.21.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "ts-node": "^10.9.1",
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.7.4"
+  }
+}
