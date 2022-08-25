@@ -10,15 +10,15 @@
 
 ## 对比结果分析
 
-## PriorityQueue (heap)
+### PriorityQueue (heap)
 
 目前已知最快的实现，比 [heap](http://npmjs.com/package/heap), [head-js](http://npmjs.com/package/heap-js) 以及其他流行库更快
 
-## Deque
+### Deque
 
 在持续存放元素的情况下性能是 [denque](https://npmjs.com/package/denque) 的三倍，并且**几乎和 `Array.push` 持平**
 
-## OrderedMap (RBTree)
+### OrderedMap (RBTree)
 
 插入函数慢于 [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree)
 
