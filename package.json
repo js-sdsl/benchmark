@@ -8,7 +8,7 @@
   "scripts": {
     "setup": "rm -rf node_modules && yarn install",
     "lint": "eslint --fix --color --cache --max-warnings=0 .",
-    "generate": "rm -rf README.md && touch README.md && ttsc && node dist/index.js",
+    "generate": "rm -rf docs && mkdir docs && touch docs/README.md && ttsc && node dist/index.js",
     "prepare": "husky install"
   },
   "dependencies": {

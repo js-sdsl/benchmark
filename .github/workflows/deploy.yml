@@ -11,7 +11,7 @@ jobs:
     - name: Install dependencies
       run: yarn install
     - name: Generate README
-      run: yarn generate && mkdir docs && mv README.md docs/
+      run: yarn generate
     - name: Deploy to github pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
