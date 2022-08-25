@@ -2,7 +2,7 @@
 
 English | [简体中文](https://github.com/js-sdsl/benchmark/blob/main/README.zh-CN.md)
 
-## describe
+## Describe
 
 Here is the [Js-sdsl](https://github.com/zly201/js-sdsl) benchmark, where we compare the performance of Js-sdsl and popular data structure libraries on npm.
 
