@@ -10,15 +10,15 @@ We saved the test results to the README file of gh-pages, you can also visit [he
 
 ## Comparison result analysis
 
-## PriorityQueue (heap)
+### PriorityQueue (heap)
 
 Fastest known implementation, faster than [heap](http://npmjs.com/package/heap), [head-js](http://npmjs.com/package/heap-js) and other popular libraries.
 
-## Deque
+### Deque
 
 Three times the performance of [denque](https://npmjs.com/package/denque) and **nearly equal to `Array.push`** in the case of persistent elements.
 
-## OrderedMap (RBTree)
+### OrderedMap (RBTree)
 
 Insert function is slower than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree).
 
