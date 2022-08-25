@@ -16,7 +16,7 @@ Fastest known implementation, faster than [heap](http://npmjs.com/package/heap),
 
 ### Deque
 
-Three times the performance of [denque](https://npmjs.com/package/denque) and **nearly equal to `Array.push`** in the case of persistent elements.
+Three times the performance of [denque](https://npmjs.com/package/denque) and **nearly equal to `Array.push`** in the case of push elements.
 
 ### OrderedMap (RBTree)
 
@@ -24,4 +24,4 @@ Insert function is slower than [functional-red-black-tree](https://npmjs.com/pac
 
 Remove elements faster than functional-red-black-tree.
 
-After binary search optimization, it is equal to functional-red-black-tree (to be released).
+Binary search is equal to functional-red-black-tree after optimization (to be released).
