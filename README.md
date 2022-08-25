@@ -1,27 +1,27 @@
-# Js-sdsl Benchmark
+# [Js-sdsl Benchmark](https://github.com/js-sdsl/benchmark)
 
-## Description
+English | [简体中文](https://github.com/js-sdsl/benchmark/blob/main/README.zh-CN.md)
 
-Here is the [Js-sdsl](https://github.com/zly201/js-sdsl) benchmark repository, where we compare Js-sdsl with other popular data structure libraries on npm.
+## describe
 
-We save the results to the README in the gh-pages branch.
+Here is the [Js-sdsl](https://github.com/zly201/js-sdsl) benchmark, where we compare the performance of Js-sdsl and popular data structure libraries on npm.
 
-You can also visit [here](https://js-sdsl.github.io/#/test/benchmark) to see the comparison result.
+We saved the test results to the README file of gh-pages, you can also visit [here](https://js-sdsl.github.io/#/zh-cn/test/benchmark) to view.
 
 ## Comparison result analysis
 
 ## PriorityQueue (heap)
 
-In all heap tests, js-sdsl beats all libraries by a huge margin including [heap](http://npmjs.com/package/heap), [head-js](http://npmjs.com/package/heap-js) and so on.
+Fastest known implementation, faster than [heap](http://npmjs.com/package/heap), [head-js](http://npmjs.com/package/heap-js) and other popular libraries.
 
 ## Deque
 
-Even outperforms [denque](https://npmjs.com/package/denque) in the case of continuous push.
+Three times the performance of [denque](https://npmjs.com/package/denque) and **nearly equal to `Array.push`** in the case of persistent elements.
 
 ## OrderedMap (RBTree)
 
-Insertion is inferior to [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree).
+Insert function is slower than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree).
 
-Removing is stronger than functional-red-black-tree.
+Remove elements faster than functional-red-black-tree.
 
-Binary search is on par with functional-red-black-tree.
+After binary search optimization, it is equal to functional-red-black-tree (to be released).
