@@ -20,8 +20,8 @@ Three times the performance of [denque](https://npmjs.com/package/denque) and **
 
 ### OrderedMap (RBTree)
 
-Insert function is slower than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree).
+Fastest known implementation.
 
-Remove elements faster than functional-red-black-tree.
+Inserting, removing and binary search functions are fater than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) and [bintrees](https://npmjs.com/package/bintrees).
 
-Binary search is equal to functional-red-black-tree after optimization (to be released).
+Removing even faster than es6 map!
