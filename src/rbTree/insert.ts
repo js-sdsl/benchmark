@@ -5,10 +5,10 @@ import Benchmark from 'benchmark';
 import run from '../utils/run';
 
 export default async function () {
-  const l = 10000;
+  const l = 1000;
   const arr: number[] = [];
   for (let i = 0; i < l; ++i) {
-    arr.push(Math.floor(Math.random() * l));
+    arr.push(Math.random() * l * l);
   }
   const suite = new Benchmark.Suite();
   suite.add('js-sdsl', function () {
@@ -22,11 +22,11 @@ export default async function () {
       binTree.insert(arr[i]);
     }
   }).add('functional-red-black-tree', function () {
-    const functionalRedBlackTree = FunctionalRedBlackTree<number, number>();
+    let functionalRedBlackTree = FunctionalRedBlackTree<number, number>();
     for (let i = 0; i < l; ++i) {
-      functionalRedBlackTree.insert(arr[i], i);
+      functionalRedBlackTree = functionalRedBlackTree.insert(arr[i], i);
     }
-  }).add('es6 map', function () {
+  }).add('es6-map', function () {
     const map = new Map();
     for (let i = 0; i < l; ++i) {
       map.set(arr[i], i);

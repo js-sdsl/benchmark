@@ -1,6 +1,6 @@
 import insertTest from './insert';
 import removeTest from './remove';
-import lowerBound from './lowerBound';
+import lowerBoundTest from './lowerBound';
 
 export default async function () {
   console.info('rbTree testing...');
@@ -8,7 +8,7 @@ export default async function () {
     '## RBTree\n',
     insertTest(),
     removeTest(),
-    lowerBound()
+    lowerBoundTest()
   ]);
   console.info('rbTree test finished');
   return content.join('\n');

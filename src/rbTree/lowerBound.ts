@@ -8,12 +8,12 @@ export default async function () {
   const l = 10000;
   const binTree = new BinTree.RBTree((x: number, y: number) => x - y);
   const orderedMap = new OrderedMap<number, number>();
-  const functionalRedBlackTree = FunctionalRedBlackTree<number, number>();
+  let functionalRedBlackTree = FunctionalRedBlackTree<number, number>();
   for (let i = 0; i < l; ++i) {
     const random = Math.random() * l;
     binTree.insert(random);
     orderedMap.setElement(random, i);
-    functionalRedBlackTree.insert(random, i);
+    functionalRedBlackTree = functionalRedBlackTree.insert(random, i);
   }
   const suite = new Benchmark.Suite();
   suite.add('js-sdsl', function () {
