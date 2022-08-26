@@ -20,8 +20,9 @@
 
 ### OrderedMap (RBTree)
 
-插入函数慢于 [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree)
+目前已知最快的实现
 
-删除元素快于 functional-red-black-tree
+插入、删除和二分查找快于 [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) 和 [bintrees](https://npmjs.com/package/bintrees).
 
-二分查找优化后和 functional-red-black-tree 持平（待发布）
+删除函数甚至比 ES6 中提供的原生 map 更快！
+
