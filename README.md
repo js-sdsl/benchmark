@@ -22,6 +22,6 @@ Three times the performance of [denque](https://npmjs.com/package/denque) and **
 
 Fastest known implementation.
 
-Inserting, removing and binary search functions are fater than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) and [bintrees](https://npmjs.com/package/bintrees).
+Inserting, removing and binary search functions are faster than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) and [bintrees](https://npmjs.com/package/bintrees).
 
 Removing even faster than es6 map!
