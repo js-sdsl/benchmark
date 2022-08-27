@@ -4,7 +4,7 @@ English | [简体中文](https://github.com/js-sdsl/benchmark/blob/main/README.z
 
 ## Describe
 
-Here is the [Js-sdsl](https://github.com/zly201/js-sdsl) benchmark, where we compare the performance of Js-sdsl and popular data structure libraries on npm.
+Here is the [Js-sdsl](https://github.com/js-sdsl/js-sdsl) benchmark, where we compare the performance of Js-sdsl and popular data structure libraries on npm.
 
 We saved the test results to the README file of gh-pages, you can also visit [here](https://js-sdsl.github.io/#/zh-cn/test/benchmark) to view.
 
