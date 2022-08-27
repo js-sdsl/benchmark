@@ -6,7 +6,7 @@ English | [简体中文](https://github.com/js-sdsl/benchmark/blob/main/README.z
 
 Here is the [Js-sdsl](https://github.com/js-sdsl/js-sdsl) benchmark, where we compare the performance of Js-sdsl and popular data structure libraries on npm.
 
-We saved the test results to the README file of gh-pages, you can also visit [here](https://js-sdsl.github.io/#/zh-cn/test/benchmark) to view.
+We saved the test results to the README file of gh-pages, you can also visit [here](https://js-sdsl.github.io/#/zh-cn/test/benchmark-result) to view.
 
 ## Comparison result analysis
 
@@ -22,6 +22,6 @@ Three times the performance of [denque](https://npmjs.com/package/denque) and **
 
 Fastest known implementation.
 
-Inserting, removing and binary search functions are fater than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) and [bintrees](https://npmjs.com/package/bintrees).
+Inserting, removing and binary search functions are faster than [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) and [bintrees](https://npmjs.com/package/bintrees).
 
 Removing even faster than es6 map!

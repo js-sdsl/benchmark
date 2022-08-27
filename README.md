@@ -6,7 +6,7 @@ This is Js-sdsl benchmark. To get source code you can go to [github](https://git
 Linux 5.15.0-1017-azure x64
 Node.JS 16.17.0
 V8 9.4.146.26-node.22
-Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz × 2
+Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz × 2
 ```
 
 ## heap
@@ -14,44 +14,44 @@ Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz × 2
 ### init heap in constructor
 
 ```bash
-js-sdsl x 25,415 ops/sec ±1.42% (85 runs sampled)
-heap x 8,505 ops/sec ±1.25% (88 runs sampled)
-heap-js x 1,890 ops/sec ±2.61% (82 runs sampled)
-mnemonist x 6,209 ops/sec ±1.70% (87 runs sampled)
-typescript-collections x 967 ops/sec ±1.06% (88 runs sampled)
+js-sdsl x 31,598 ops/sec ±0.47% (90 runs sampled)
+heap x 9,989 ops/sec ±0.34% (94 runs sampled)
+heap-js x 2,412 ops/sec ±2.65% (88 runs sampled)
+mnemonist x 6,784 ops/sec ±0.35% (98 runs sampled)
+typescript-collections x 774 ops/sec ±0.09% (95 runs sampled)
 Fastest is js-sdsl
 ```
 
 ### init heap in constructor when copy is false
 
 ```bash
-js-sdsl x 51,649 ops/sec ±0.59% (90 runs sampled)
-heap x 36,584 ops/sec ±1.32% (88 runs sampled)
-heap-js x 16,389 ops/sec ±0.77% (90 runs sampled)
-mnemonist x 39,403 ops/sec ±0.69% (93 runs sampled)
-typescript-collections x 6,590 ops/sec ±0.64% (92 runs sampled)
+js-sdsl x 60,026 ops/sec ±0.08% (98 runs sampled)
+heap x 42,828 ops/sec ±0.52% (89 runs sampled)
+heap-js x 20,464 ops/sec ±0.12% (96 runs sampled)
+mnemonist x 43,678 ops/sec ±0.11% (93 runs sampled)
+typescript-collections x 7,544 ops/sec ±0.28% (99 runs sampled)
 Fastest is js-sdsl
 ```
 
 ### push
 
 ```bash
-js-sdsl x 12,168 ops/sec ±0.78% (91 runs sampled)
-heap x 5,550 ops/sec ±1.08% (90 runs sampled)
-heap-js x 2,238 ops/sec ±1.29% (87 runs sampled)
-mnemonist x 6,008 ops/sec ±1.12% (90 runs sampled)
-typescript-collections x 481 ops/sec ±1.06% (87 runs sampled)
+js-sdsl x 14,422 ops/sec ±0.44% (95 runs sampled)
+heap x 6,716 ops/sec ±0.20% (98 runs sampled)
+heap-js x 3,150 ops/sec ±0.93% (89 runs sampled)
+mnemonist x 7,525 ops/sec ±0.06% (97 runs sampled)
+typescript-collections x 580 ops/sec ±0.09% (94 runs sampled)
 Fastest is js-sdsl
 ```
 
 ### pop
 
 ```bash
-js-sdsl x 183,746,311 ops/sec ±0.74% (92 runs sampled)
-heap x 177,009,797 ops/sec ±1.16% (87 runs sampled)
-heap-js x 11,984,233 ops/sec ±103.26% (87 runs sampled)
-mnemonist x 150,191,573 ops/sec ±1.15% (89 runs sampled)
-typescript-collections x 175,770,958 ops/sec ±1.37% (89 runs sampled)
+js-sdsl x 113,455,727 ops/sec ±0.17% (94 runs sampled)
+heap x 109,978,494 ops/sec ±0.14% (92 runs sampled)
+heap-js x 21,036,527 ops/sec ±108.33% (93 runs sampled)
+mnemonist x 97,111,572 ops/sec ±0.10% (93 runs sampled)
+typescript-collections x 109,476,092 ops/sec ±0.08% (95 runs sampled)
 Fastest is js-sdsl
 ```
 
@@ -60,19 +60,19 @@ Fastest is js-sdsl
 ### push
 
 ```bash
-js-sdsl x 2,454 ops/sec ±0.80% (90 runs sampled)
-denque x 3,048 ops/sec ±1.34% (85 runs sampled)
-double-ended-queue x 1,668 ops/sec ±0.77% (88 runs sampled)
-Js-Array-Push-Back x 16,563 ops/sec ±1.17% (89 runs sampled)
+js-sdsl x 2,809 ops/sec ±0.42% (95 runs sampled)
+denque x 3,500 ops/sec ±0.66% (92 runs sampled)
+double-ended-queue x 2,014 ops/sec ±0.28% (95 runs sampled)
+Js-Array-Push-Back x 16,299 ops/sec ±0.70% (96 runs sampled)
 Fastest is Js-Array-Push-Back
 ```
 
 ### getByPos
 
 ```bash
-js-sdsl x 70,606,983 ops/sec ±0.74% (90 runs sampled)
-denque x 127,169,295 ops/sec ±1.01% (91 runs sampled)
-double-ended-queue x 671,369,799 ops/sec ±0.81% (89 runs sampled)
+js-sdsl x 111,047,222 ops/sec ±0.12% (93 runs sampled)
+denque x 115,636,665 ops/sec ±0.13% (93 runs sampled)
+double-ended-queue x 593,131,634 ops/sec ±0.18% (92 runs sampled)
 Fastest is double-ended-queue
 ```
 
@@ -81,28 +81,28 @@ Fastest is double-ended-queue
 ### insert
 
 ```bash
-js-sdsl x 5,389 ops/sec ±9.73% (87 runs sampled)
-bintree x 4,592 ops/sec ±1.32% (90 runs sampled)
-functional-red-black-tree x 1,879 ops/sec ±0.91% (88 runs sampled)
-es6-map x 14,712 ops/sec ±1.00% (89 runs sampled)
+js-sdsl x 7,206 ops/sec ±9.51% (88 runs sampled)
+bintree x 4,951 ops/sec ±0.34% (95 runs sampled)
+functional-red-black-tree x 2,737 ops/sec ±0.17% (96 runs sampled)
+es6-map x 19,356 ops/sec ±0.21% (97 runs sampled)
 Fastest is es6-map
 ```
 
 ### remove
 
 ```bash
-js-sdsl x 188,105 ops/sec ±1.30% (87 runs sampled)
-bintrees x 95,167 ops/sec ±0.66% (90 runs sampled)
-functional-red-black-tree x 40,281 ops/sec ±1.28% (89 runs sampled)
-es6-map x 55,170 ops/sec ±0.60% (88 runs sampled)
+js-sdsl x 254,585 ops/sec ±0.21% (97 runs sampled)
+bintrees x 126,530 ops/sec ±0.17% (98 runs sampled)
+functional-red-black-tree x 51,174 ops/sec ±1.61% (94 runs sampled)
+es6-map x 64,111 ops/sec ±0.22% (93 runs sampled)
 Fastest is js-sdsl
 ```
 
 ### lowerBound
 
 ```bash
-js-sdsl x 14,766,702 ops/sec ±1.09% (88 runs sampled)
-bintrees x 4,925,695 ops/sec ±0.84% (89 runs sampled)
-functional-red-black-tree x 5,346,138 ops/sec ±0.92% (89 runs sampled)
+js-sdsl x 15,139,005 ops/sec ±0.92% (95 runs sampled)
+bintrees x 4,993,001 ops/sec ±0.49% (93 runs sampled)
+functional-red-black-tree x 5,777,756 ops/sec ±0.85% (94 runs sampled)
 Fastest is js-sdsl
 ```

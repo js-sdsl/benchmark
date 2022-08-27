@@ -6,7 +6,7 @@
 
 这里是 [Js-sdsl](https://github.com/js-sdsl/js-sdsl) 基准测试, 我们在这里将 Js-sdsl 和 npm 上流行的数据结构库进行性能对比
 
-我们将测试结果保存到了 gh-pages 的 README 文件中，您也可以访问[此处](https://js-sdsl.github.io/#/zh-cn/test/benchmark)查看
+我们将测试结果保存到了 gh-pages 的 README 文件中，您也可以访问[此处](https://js-sdsl.github.io/#/zh-cn/test/benchmark-result)查看
 
 ## 对比结果分析
 
