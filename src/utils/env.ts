@@ -4,7 +4,7 @@ export default function () {
   const v8Version = process.versions.v8;
   const nodeVersion = process.versions.node;
   const plat =
-`${os.type()} ${os.release()} ${os.arch()}
+    `${os.type()} ${os.release()} ${os.arch()}
 Node.JS ${nodeVersion}
 V8 ${v8Version}`;
 

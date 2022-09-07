@@ -1,5 +1,5 @@
 {
-  "name": "compare2other",
+  "name": "benchmark",
   "version": "1.0.0",
   "description": "compare js-sdsl to other data structure package",
   "main": "index.js",
