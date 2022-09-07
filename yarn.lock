@@ -1367,10 +1367,10 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-js-sdsl@^4.1.4-beta.0:
-  version "4.1.4-beta.0"
-  resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.1.4-beta.0.tgz#0f863a9701c9e0fd07704ed9cbe5ae66b36835e4"
-  integrity sha512-mvuLGlGJeUV35gC6zaYzyUU5jL462KeMsCrpDei+9/xDE8ximzpEJxfHJewvIhJL9LvI2NAArD9U2EXM9LHkbQ==
+js-sdsl@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.1.4.tgz#78793c90f80e8430b7d8dc94515b6c77d98a26a6"
+  integrity sha512-Y2/yD55y5jteOAmY50JbUZYwk3CP3wnLPEZnlR1w9oKhITrBEtAxwuWKebFf8hMrPMgbYwFoWK/lH2sBkErELw==
 
 js-tokens@^4.0.0:
   version "4.0.0"
