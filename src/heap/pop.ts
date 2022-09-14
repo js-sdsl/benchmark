@@ -22,15 +22,15 @@ export default async function () {
   }
   const suite = new Benchmark.Suite();
   suite.add('js-sdsl', function () {
-    if (!priorityQueue.empty()) priorityQueue.pop();
+    priorityQueue.pop();
   }).add('heap', function () {
-    if (!heap.empty()) heap.pop();
+    heap.pop();
   }).add('heap-js', function () {
-    if (!minHeap.isEmpty()) minHeap.pop();
+    minHeap.pop();
   }).add('mnemonist', function () {
-    if (mnemonistHeap.size) minHeap.pop();
+    minHeap.pop();
   }).add('typescript-collections', function () {
-    if (!priorityQueueCollections.isEmpty()) priorityQueueCollections.dequeue();
+    priorityQueueCollections.dequeue();
   });
   return await new Promise(resolve => run(suite, 'pop', resolve));
 }

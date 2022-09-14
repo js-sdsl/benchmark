@@ -20,20 +20,14 @@ export default async function () {
       heap.push(arr[i]);
     }
   }).add('heap-js', function () {
-    const arr: number[] = [];
-    for (let i = 0; i < l; ++i) arr.push(i);
     const minHeap = new HeapJs<number>((x, y) => x - y);
     minHeap.init(arr);
   }).add('mnemonist', function () {
-    const arr: number[] = [];
-    for (let i = 0; i < l; ++i) arr.push(i);
     const minHeap = new MinHeap<number>((x, y) => x - y);
     for (let i = 0; i < l; ++i) {
       minHeap.push(arr[i]);
     }
   }).add('typescript-collections', function () {
-    const arr: number[] = [];
-    for (let i = 0; i < l; ++i) arr.push(i);
     const minHeap = new PriorityQueueCollections<number>((x, y) => x - y);
     for (let i = 0; i < l; ++i) {
       minHeap.add(i);
