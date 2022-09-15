@@ -4,7 +4,7 @@ import pushTest from './push';
 export default async function () {
   console.info('deque testing...');
   const content = await Promise.all([
-    '## Deque\n',
+    '## deque\n',
     pushTest(),
     getTest()
   ]);
