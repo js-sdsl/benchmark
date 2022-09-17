@@ -9,7 +9,7 @@
     "setup": "rm -rf node_modules && yarn install",
     "lint": "eslint --fix --color --cache --max-warnings=0 .",
     "dev": "NODE_ENV=development ts-node src/index.ts",
-    "test": "ttsc && NODE_ENV=development node dist/index.js ",
+    "test": "ttsc && NODE_ENV=development node dist/index.js",
     "generate": "rm -rf docs && mkdir docs && touch docs/README.md && ttsc && NODE_ENV=production node dist/index.js",
     "prepare": "husky install"
   },
