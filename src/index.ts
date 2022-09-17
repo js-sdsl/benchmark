@@ -4,14 +4,16 @@ import rbTreeTest from './rbTree';
 import heapTest from './heap';
 import saveResult from './utils/saveResult';
 
+const NODE_ENV = process.env.NODE_ENV;
+
 async function main(input: string[]) {
   let content;
   if (input.length === 0) {
     content = await Promise.all([
       env(),
-      dequeTest(),
-      heapTest(),
-      rbTreeTest()
+      // heapTest(),
+      dequeTest()
+      // rbTreeTest()
     ]);
   } else {
     content = await Promise.all([
@@ -21,9 +23,14 @@ async function main(input: string[]) {
       input.includes('rbTree') ? rbTreeTest() : ''
     ]);
   }
-  console.info('saving result...');
-  await saveResult(content.filter(x => x !== '').join('\n'));
-  console.info('saved!');
+  content = content.filter(x => x !== '').join('\n');
+  if (NODE_ENV === 'development') {
+    console.log(content);
+  } else {
+    console.info('saving result...');
+    await saveResult(content);
+    console.info('saved!');
+  }
 }
 
 main(process.argv.slice(2));
