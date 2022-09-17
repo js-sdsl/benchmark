@@ -23,6 +23,3 @@
 目前已知最快的实现
 
 插入、删除和二分查找快于 [functional-red-black-tree](https://npmjs.com/package/functional-red-black-tree) 和 [bintrees](https://npmjs.com/package/bintrees).
-
-删除函数甚至比 ES6 中提供的原生 map 更快！
-
