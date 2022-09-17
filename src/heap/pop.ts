@@ -28,7 +28,7 @@ export default async function () {
   }).add('heap-js', function () {
     minHeap.pop();
   }).add('mnemonist', function () {
-    minHeap.pop();
+    mnemonistHeap.pop();
   }).add('typescript-collections', function () {
     priorityQueueCollections.dequeue();
   });

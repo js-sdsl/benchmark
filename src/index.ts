@@ -11,9 +11,9 @@ async function main(input: string[]) {
   if (input.length === 0) {
     content = await Promise.all([
       env(),
-      // heapTest(),
-      dequeTest()
-      // rbTreeTest()
+      heapTest(),
+      dequeTest(),
+      rbTreeTest()
     ]);
   } else {
     content = await Promise.all([

@@ -25,22 +25,23 @@ export default async function () {
     [arr[a], arr[b]] = [arr[b], arr[a]];
   }
   const suite = new Benchmark.Suite();
+  let a = 0; let b = 0; let c = 0; let d = 0;
   suite.add('js-sdsl', function () {
-    for (const a of arr) {
-      orderedMap.eraseElementByKey(a);
-    }
+    orderedMap.eraseElementByKey(arr[a]);
+    orderedMap.setElement(arr[a], arr[a]);
+    a = (a + 1) % l;
   }).add('bintrees', function () {
-    for (const a of arr) {
-      binTree.remove(a);
-    }
+    binTree.remove(arr[b]);
+    binTree.insert(arr[b]);
+    b = (b + 1) % l;
   }).add('functional-red-black-tree', function () {
-    for (const a of arr) {
-      functionalRedBlackTree = functionalRedBlackTree.remove(a);
-    }
+    functionalRedBlackTree = functionalRedBlackTree.remove(arr[c]);
+    functionalRedBlackTree = functionalRedBlackTree.insert(arr[c], arr[c]);
+    c = (c + 1) % l;
   }).add('es6-map', function () {
-    for (const a of arr) {
-      map.delete(a);
-    }
+    map.delete(arr[d]);
+    map.set(arr[d], arr[d]);
+    d = (d + 1) % l;
   });
   return await new Promise<string>(resolve => run(suite, 'remove', resolve));
 }
