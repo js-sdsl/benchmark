@@ -14,10 +14,10 @@ export default async function () {
   const suite = new Benchmark.Suite();
   const end = orderedMap.end();
   suite.add('js-sdsl', function () {
-    const iterator = orderedMap.lowerBound(l >> 1);
+    const iterator = orderedMap.begin();
     while (!iterator.equals(end)) iterator.next();
   }).add('functional-red-black-tree', function () {
-    const iterator = functionalRedBlackTree.ge(l >> 1);
+    const iterator = functionalRedBlackTree.begin;
     while (iterator.valid) iterator.next();
   });
   return await new Promise<string>(resolve => run(suite, 'iterator', resolve));
