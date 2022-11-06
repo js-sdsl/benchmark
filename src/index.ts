@@ -2,6 +2,7 @@ import env from './utils/env';
 import dequeTest from './deque';
 import rbTreeTest from './rbTree';
 import heapTest from './heap';
+import hashTableTest from './hash-table';
 import saveResult from './utils/saveResult';
 
 const NODE_ENV = process.env.NODE_ENV;
@@ -13,14 +14,16 @@ async function main(input: string[]) {
       env(),
       heapTest(),
       dequeTest(),
-      rbTreeTest()
+      rbTreeTest(),
+      hashTableTest()
     ]);
   } else {
     content = await Promise.all([
       env(),
       input.includes('heap') ? heapTest() : '',
       input.includes('deque') ? dequeTest() : '',
-      input.includes('rbTree') ? rbTreeTest() : ''
+      input.includes('rbTree') ? rbTreeTest() : '',
+      input.includes('hash-table') ? hashTableTest() : ''
     ]);
   }
   content = content.filter(x => x !== '').join('\n');
