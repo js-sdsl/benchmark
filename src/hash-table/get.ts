@@ -66,13 +66,13 @@ export async function getObjectTest() {
   suite.add('js-sdsl', function () {
     const hashMap = new HashMap<Record<string, string>, number>();
     for (let i = 0; i < l; ++i) {
-      // eslint-disable-next-line no-unused-vars
+      // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
       const a = hashMap.getElementByKey(arr[i]);
     }
   }).add('es6-map', function () {
     const map = new Map<Record<string, string>, number>();
     for (let i = 0; i < l; ++i) {
-      // eslint-disable-next-line no-unused-vars
+      // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
       const a = map.get(arr[i]);
     }
   });
