@@ -42,6 +42,6 @@ export default async function () {
     }
   });
   return await new Promise(
-    resolve => run(suite, 'init heap in constructor when copy is false', resolve)
+    resolve => run(suite, 'init', resolve)
   );
 }

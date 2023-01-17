@@ -26,11 +26,11 @@ memory diff is \`Denque\` - \`Deque\`
 
 \`\`\`bash\n`;
   content += testList.map(size => {
-    const [a, memoryA] = catchMemory(Deque, size);
-    const [b, memoryB] = catchMemory(Denque, size);
-    return [a, b, memoryB - memoryA] as [unknown, unknown, number];
-  }).map((arr, index) =>
-    `size: 10^${index + 1}    memory-diff: ${Math.floor(arr[2] / 1024)} KB`
+    const [, memoryA] = catchMemory(Deque, size);
+    const [, memoryB] = catchMemory(Denque, size);
+    return memoryB - memoryA;
+  }).map((memory, index) =>
+    `size: 10^${index + 1}    memory-diff: ${Math.floor(memory / 1024)} KB`
   ).join('\n');
   return content + '\n```\n';
 }
