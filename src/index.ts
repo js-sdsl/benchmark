@@ -4,32 +4,27 @@ import rbTreeTest from './rbTree';
 import heapTest from './heap';
 import hashTableTest from './hash-table';
 import saveResult from './utils/saveResult';
+import linklistTest from './linklist';
 
-const NODE_ENV = process.env.NODE_ENV;
+const testMap: Record<string, () => Promise<string>> = {
+  heap: heapTest,
+  deque: dequeTest,
+  linklist: linklistTest,
+  rbTree: rbTreeTest,
+  'hash-table': hashTableTest
+};
 
 async function main(input: string[]) {
-  let content;
   if (input.length === 0) {
-    content = await Promise.all([
-      env(),
-      heapTest(),
-      dequeTest(),
-      rbTreeTest(),
-      hashTableTest()
-    ]);
-  } else {
-    content = await Promise.all([
-      env(),
-      input.includes('heap') ? heapTest() : '',
-      input.includes('deque') ? dequeTest() : '',
-      input.includes('rbTree') ? rbTreeTest() : '',
-      input.includes('hash-table') ? hashTableTest() : ''
-    ]);
+    input = Object.keys(testMap);
   }
-  content = content.filter(x => x !== '').join('\n');
-  if (NODE_ENV === 'development') {
-    console.log(content);
-  } else {
+  const testQueue: (Promise<string> | string)[] = [env()];
+  for (const str of input) {
+    testQueue.push(testMap[str]());
+  }
+  const content = (await Promise.all(testQueue)).join('\n');
+  console.log(content);
+  if (process.env.NODE_ENV === 'production') {
     console.info('saving result...');
     await saveResult(content);
     console.info('saved!');

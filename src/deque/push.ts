@@ -18,7 +18,6 @@ export default async function () {
     for (let i = 0; i < l; ++i) {
       denque.unshift(i);
     }
-    denque.clear();
   }).add('double-ended-queue', function () {
     const doubleEndedQueue = new DoubleEndedQueue();
     for (let i = 0; i < l; ++i) {

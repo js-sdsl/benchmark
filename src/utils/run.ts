@@ -8,7 +8,7 @@ export default function (suite: Suite, name = '', resolve: (content: string) => 
 \`\`\`bash\n`;
   suite.on('cycle', function (e: Event) {
     content += '' + e.target + '\n';
-  }).on('complete', async function (this: Suite) {
+  }).on('complete', function (this: Suite) {
     content +=
 `Fastest is ${this.filter('fastest').map('name')}
 \`\`\`\n`;
