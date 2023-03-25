@@ -5,7 +5,7 @@ import Benchmark from 'benchmark';
 import run from '../utils/run';
 
 export default async function () {
-  const l = 1000;
+  const l = 500;
   const arr: number[] = [];
   for (let i = 0; i < l; ++i) {
     arr.push(Math.random() * l * l);
