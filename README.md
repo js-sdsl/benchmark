@@ -14,6 +14,10 @@ We saved the test results to the README file of gh-pages, you can also visit [he
 
 Fastest known implementation, faster than [heap](http://npmjs.com/package/heap), [head-js](http://npmjs.com/package/heap-js) and other popular libraries.
 
+### LinkList
+
+Faster than [yallist](https://www.npmjs.com/package/yallist).
+
 ### Deque
 
 Three times the performance of [denque](https://npmjs.com/package/denque) and **nearly equal to `Array.push`** in the case of push elements.

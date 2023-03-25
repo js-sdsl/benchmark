@@ -14,6 +14,10 @@
 
 目前已知最快的实现，比 [heap](http://npmjs.com/package/heap), [head-js](http://npmjs.com/package/heap-js) 以及其他流行库更快
 
+### LinkList
+
+比 [yallist](https://www.npmjs.com/package/yallist) 快很多
+
 ### Deque
 
 在持续存放元素的情况下性能是 [denque](https://npmjs.com/package/denque) 的三倍，并且**几乎和 `Array.push` 持平**
